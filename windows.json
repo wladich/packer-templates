@@ -7,7 +7,7 @@
     "name": "{{ env `NAME` }}",
     "packer_images_output_dir": "{{ env `PACKER_IMAGES_OUTPUT_DIR` }}",
     "cpus": "2",
-    "memory": "4096",
+    "memory": "3072",
     "ssh_winrm_host_port": "2299",
     "virtio_win_iso": "{{ env `VIRTIO_WIN_ISO` }}",
     "iso_url": "{{ env `ISO_URL` }}",
