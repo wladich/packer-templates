@@ -45,6 +45,9 @@
         automatic: no
         state: absent
 
+    - name: Disable Windows Defender Realtime monitoring
+      win_shell: Set-MpPreference -DisableRealtimeMonitoring $true
+
     - name: Disable Hibernate Mode
       win_command: powercfg -h off
       changed_when: false
